@@ -1,13 +1,13 @@
 import { useState } from "react";
 
-import Header from "../components/view/header";
+// import Header from "../components/view/header";
 import { sculptureList } from "../components/parties/data";
 
 
 export default function AboutPage() {
   return (
     <>
-      <Header />
+      {/* <Header /> */}
       <div className="container py-12 space-y-8">
         <h1 className="text-4xl font-bold text-purple-800">A propos</h1>
 

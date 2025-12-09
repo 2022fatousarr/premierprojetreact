@@ -41,3 +41,9 @@ export interface Service {
   description: string;
   link: string;
 }
+
+export interface ImagesTypes {
+  url:string;
+  alt:string;
+  tèmoignage:string;
+}

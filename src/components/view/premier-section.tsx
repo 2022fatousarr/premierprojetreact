@@ -40,13 +40,13 @@ const Cards: CardProps[] = [
 
 export default function PremierSection() {
   return (
-    <div className="my-24 text-center px-4 space-y-12">
+    <div className="my-24 text-center px-4 space-y-12 container">
       <TitleSection
         titre={titre.titre}
         sousTitre={titre.sousTitre}
         description={titre.description}
       />
-      <div className="grid grid-cols-3 gap-6">
+      <div className="grid lg:grid-cols-3 grid-cols-1 gap-6 ">
         {Cards.map((card, index) => (
           <Card
 

@@ -10,14 +10,14 @@ const logos: Logo[] = [
 ];
 export default function Partenaires() {
   return (
-    <div className="container space-y-4 ">
-      <h2 className="text-center">Trusted by 5,000+ Companies Worldwide</h2>
-      <div className="grid lg:grid-cols-6 grid-cols-3 gap-10 w-100" >
+    <div className="container space-y-6 flex flex-col items-center justify-center py-16 ">
+      <h2 className="">Trusted by 5,000+ Companies Worldwide </h2>
+      <div className="grid lg:grid-cols-6 grid-cols-3 gap-10 w-170 items-center  " >
         {logos.map((logo, index) => (
           <img
             key={index}
             src={logo.src}
-            className="rounded-xl  w-full h-full object-cover"
+            className="  "
             alt={logo.alt}
           />
         ))}

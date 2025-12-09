@@ -10,7 +10,7 @@ export default function DeuxiemeSection() {
         description="Skilline is a platform that allows educators to create online classes whereby they can store the course materials online; manage assignments, quizzes and exams; monitor due dates; grade results and provide students with feedback all in one place."
       />
 
-      <div className="flex items-center justify-between gap-6 my-24 container">
+      <div className="flex flex-col md:flex-row items-start justify-between gap-6 my-24 container ">
         <div className="bg-[url(https://mhaecal.github.io/frontend/img/Rectangle%2019.png)] bg-center bg-no-repeat bg-cover w-full h-[300px] flex items-center justify-center flex-col gap-5 rounded-2xl ">
           <h3 className="text-3xl font-bold text-white ">For instructor</h3>
           <Button

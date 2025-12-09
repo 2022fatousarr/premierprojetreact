@@ -5,7 +5,8 @@ export default function Button({ text, className }: ButtonProps) {
     <button
       className={`bg-[#F48C06] px-4 py-2 rounded-full cursor-pointer hover:scale-125 transition duration-700 ${className}`}
     >
-      {text}
+      <a href="{link}"> {text}</a>
+      
     </button>
   );
 }

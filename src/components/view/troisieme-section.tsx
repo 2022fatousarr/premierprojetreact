@@ -4,7 +4,7 @@ import Button from "../parties/button";
 
 export default function TroisiemeSection() {
   return (
-    <div className="flex items-center justify-between container gap-6">
+    <div className="flex  flex-col md:flex-row items-start justify-between container gap-6">
       <div className="w-1/2">
         <TitleSection
           titre="Everything you can do in a physical classroom"

@@ -1,5 +1,5 @@
 import React from "react";
-import type { TitleSectionProps } from "./parties/type";
+import type { TitleSectionProps } from "../parties/type";
 
 export default function TitleSection({
   titre,
@@ -12,7 +12,7 @@ export default function TitleSection({
         {" "}
         {titre} <span className="text-amber-500">{sousTitre} </span>
       </h2>
-      <p className="text-gray-400"> {description}</p>
+      <p className="text-black text-xl"> {description}</p>
     </div>
   );
 }
