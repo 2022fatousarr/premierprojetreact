@@ -1,56 +1,51 @@
 
 import { useState } from "react";
 import { images } from './donnets';
-
+import { GiFastBackwardButton, GiFastForwardButton } from "react-icons/gi";
 
 function Temoignages() {
   const [index, setIndex] = useState(0);
-  const [afficher, setAfficher] = useState(true);
 
-  function handleClick() {
-    setIndex(index + 1);
-    console.log(index);
+  function handleNext() {
+    setIndex((i) => (i + 1) % images.length);
   }
 
-  function handleAfficher() {
-    setAfficher(!afficher);
+  function handlePrev() {
+    setIndex((i) => (i - 1 + images.length) % images.length);
   }
 
-  const image = images[index];
+  const current = images[index];
 
   return (
-    <div>
+    <div className="relative w-full flex items-center gap-6">
       <button
-        className="bg-black text-white px-4 py-2 rounded-md cursor-pointer"
-        onClick={() => setIndex(index - 1)}
+        className="text-3xl text-gray-700"
+        onClick={handlePrev}
+        aria-label="Précédent"
       >
-        precedent
+        <GiFastBackwardButton />
       </button>
 
-      <button
-        className="bg-black text-white px-4 py-2 rounded-md cursor-pointer"
-        onClick={handleClick}
-      >
-        Suivant
-      </button>
-      
-      <h3>
-        ({index + 1} sur {images.length})
-      </h3>
-      <img src={image.url}  />
+      <div className="relative">
+        <img
+          src={current.url}
+          alt={current.alt}
+          className="w-64 h-64 object-cover rounded-lg shadow-md"
+        />
+
+        <div className="absolute left-6 -bottom-8 px-10 py-6 rounded-lg bg-white shadow-lg shadow-gray-400 w-80">
+          <span className="bg-orange-800 rounded-sm w-3 h-26 absolute -top-1 -left-1 block" />
+          <p className="text-gray-700">{current.temoignage}</p>
+        </div>
+      </div>
 
       <button
-        className="bg-black text-white px-4 py-2 rounded-md cursor-pointer"
-        onClick={handleAfficher}
+        className="text-3xl text-gray-700"
+        onClick={handleNext}
+        aria-label="Suivant"
       >
-        afficher
+        <GiFastForwardButton />
       </button>
-
-      {afficher ? (
-        <p>{image.tèmoignage}</p>
-      ) : (
-        <p>description non disponible</p>
-      )}
     </div>
   );
 }

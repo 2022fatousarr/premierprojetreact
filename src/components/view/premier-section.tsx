@@ -1,4 +1,4 @@
-// JSX runtime automatic — no React import required here
+
 import TitleSection from "../parties/title";
 import type { CardProps, TitleSectionProps } from "../parties/type";
 import Card from "../parties/card";
@@ -40,13 +40,13 @@ const Cards: CardProps[] = [
 
 export default function PremierSection() {
   return (
-    <div className="my-24 text-center px-4 space-y-12 container">
+    <div className="my-24 text-center px-4 space-y-12">
       <TitleSection
         titre={titre.titre}
         sousTitre={titre.sousTitre}
         description={titre.description}
       />
-      <div className="grid lg:grid-cols-3 grid-cols-1 gap-6 ">
+      <div className="grid grid-cols-3 gap-6">
         {Cards.map((card, index) => (
           <Card
 

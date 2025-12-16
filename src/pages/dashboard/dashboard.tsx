@@ -1,4 +1,4 @@
-// JSX runtime automatic — no React import required here
+import React from "react";
 
 export default function Pagedashboard() {
   return (

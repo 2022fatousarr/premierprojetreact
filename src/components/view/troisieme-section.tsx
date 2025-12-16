@@ -13,7 +13,7 @@ export default function TroisiemeSection() {
         />
         <Button
           text="Learn More"
-          className="bg-transparent border-b-2 py-2 rounded-none text-gray-400"
+          className="bg-transparent border-b-2 py-2 rounded-none text-gray-400 "
         />
       </div>
       <img src="https://mhaecal.github.io/frontend/img/teacher-explaining.png" className="w-1/2 h-[400px] object-cover" alt="" />

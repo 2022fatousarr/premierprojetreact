@@ -5,6 +5,8 @@ import TroisiemeSection from "../components/view/troisieme-section";
 import FooterSection from "../components/view/footer";
 import HeroSection from "../components/view/hero-section";
 import TestimonialSection from "../components/view/testimonial-section";
+import QuatriemeSection from "../components/view/quatrieme-section";
+import NewsSection from "../components/view/news-section";
 export default function HomePage() {
   return (
     <div>
@@ -14,7 +16,10 @@ export default function HomePage() {
       <PremierSection />
       <DeuxiemeSection/>
       <TroisiemeSection />
+      <QuatriemeSection/>
+      {/* <CinquiemeSection/> */}
       <TestimonialSection/>
+      <NewsSection/>
       <FooterSection/>
     </div>
   );

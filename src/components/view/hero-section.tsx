@@ -8,7 +8,7 @@ function HeroSection() {
   return (
     <section className="flex bg-[#ebd5bc] items-center  lg:flex-row flex-col rounded-b-[150px]">
       <div className="w-full flex-col gap-6  flex items-start p-16 ">
-        <h1 className="md:text-7xl text-3xl font-bold text-[#2F327D]">
+        <h1 className=" text-5xl font-bold text-[#2F327D]">
           <span className="text-[#F48C06]">Studying</span> Online is now much
           easier
         </h1>

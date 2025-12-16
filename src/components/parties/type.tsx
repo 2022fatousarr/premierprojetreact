@@ -13,6 +13,7 @@ export interface MenuItem {
 export interface ButtonProps {
   text: string;
   className?: string;
+  link?: string;
 }
 
 export interface TitleSectionProps {
@@ -22,7 +23,7 @@ export interface TitleSectionProps {
 }
 
 export interface CardProps {
-  title: string;
+  title?: string;
   content: string;
   icon: React.ReactNode;
   className?:string;
@@ -43,7 +44,17 @@ export interface Service {
 }
 
 export interface ImagesTypes {
-  url:string;
-  alt:string;
-  tèmoignage:string;
+  url: string;
+  alt: string;
+  temoignage: string;
+}
+
+
+export interface blogType {
+  id: number;
+  tag: string;
+  title: string;
+  description: string;
+  src: string;
+  link: string;
 }

@@ -8,7 +8,7 @@ import Temoignages from '../parties/temoignages';
 
 export default function TestimonialSection() {
   return (
-    <div className='container space-y-4'>
+    <div className='container  flex flex-col lg:flex-row items-start justify-between pt-16 '>
            <div className="w-1/2">
               <TitleSection
                 titre="What They Say?"
@@ -23,7 +23,10 @@ export default function TestimonialSection() {
               />
               
             </div>
-            <Temoignages/>
+            <div>
+              <Temoignages/> 
+            </div>
+            
     </div>
   )
 }

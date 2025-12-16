@@ -17,9 +17,8 @@ import Header from "./components/view/header";
 function App() {
   return (
     <BrowserRouter>
+        
        
-        {/* <QuatriemeSection/>
-        <CinquiemeSection/> */}
        
   
       <Header/>
